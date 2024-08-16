@@ -40,7 +40,7 @@ for linha in tabela.index:
 
 # Salvando os dados no CSV
 with open(r"C:\Users\Winlitepro\Desktop\resultado_cnpj.csv", mode='w', newline='', encoding='utf-8') as file:
-    writer = csv.DictWriter(file, fieldnames=['Título', 'Capital'])
+    writer = csv.DictWriter(file, fieldnames=['titulo', 'capital'])
     writer.writeheader()
     writer.writerows(dados)
 
