@@ -5,9 +5,9 @@ import webbrowser
 import pyperclip
 import csv
 
-pyautogui.PAUSE = 3
+pyautogui.PAUSE = 4
 
-tabela = pd.read_csv(r"C:\Users\Winlitepro\Desktop\lista de cnpj.csv", dtype={'cnpj': str})
+tabela = pd.read_csv(r"C:\Users\torre\Desktop\Web-scraping-capital-social\Data\lista de cnpj.csv", dtype={'cnpj': str})
 
 home = 'https://casadosdados.com.br/solucao/cnpj?q='
 
@@ -40,9 +40,10 @@ for linha in tabela.index:
 
 # Salvando os dados no CSV
 with open(r"C:\Users\Winlitepro\Desktop\resultado_cnpj.csv", mode='w', newline='', encoding='utf-8') as file:
-    writer = csv.DictWriter(file, fieldnames=['Título', 'Capital'])
+    writer = csv.DictWriter(file, fieldnames=['titulo', 'capital'])
     writer.writeheader()
     writer.writerows(dados)
+    print('Seus dados estão prontos!')
 
 
   
