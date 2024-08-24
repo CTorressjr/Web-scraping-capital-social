@@ -40,6 +40,10 @@ Então a automação seleciona os valores desejados copia-os, e guarda dentro da
 
 Certifique-se de que todas as dependências estão listadas no arquivo `requirements.txt`.
 
+## Updates
+
+1. Inclusão de uma interface para exibir a mensagem de conclusão do processo.
+
 ## Contribuição
 
 1. Faça um fork do projeto.
